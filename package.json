@@ -1,0 +1,15 @@
+{
+  "name": "ppn-frontend-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "local": "/Users/macbook_air/Desktop/pp/ppn-frontend-prototype/node_modules/http-server/bin/http-server -o"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

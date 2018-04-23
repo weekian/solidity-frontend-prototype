@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-4.1.0/dist/css/bootstrap.min.css">
+
+    <title>MetaMask Integration</title>
+  </head>
+  <body class="text-center mt-3">
+    <h3>Testing calling of approve transaction to MetaMask wallet via HTML</h3>
+
+    <h5>Testnet Sample ERC20 Token Contract Address: <a href="https://ropsten.etherscan.io/address/0xd410f200da830e08741a9b3af9ebeb8783720ed4#readContract">0xd410F200dA830e08741A9b3Af9eBeB8783720Ed4</a></h5>
+    
+    <button type="button" class="btn btn-primary btn-lg mt-3 mb-3" id="button">Trigger Transaction</button>
+    <br>
+    <input class="form-control mb-3 text-center" type="text" id="address" placeholder="Address" value="0x2be0E96f2F47202Da620C8fb3F8DB361DDBA6A28">
+    <br>
+    <input class="form-control mb-3 text-center" type="number" id="amount" placeholder="Amount" value="1000">
+    
+    <br>
+    <button type="button" class="btn btn-primary btn-lg mt-3 mb-3" id="send_ether_button">Send Ether</button>
+
+    <h4 class="mt-5">Notes</h4>
+    <p>Web3 object is injected via MetaMask and is unavailable if MetaMask Chrome/Firefox plugin is not installed or browser is in incognito mode</p>
+    <p>Not Tested on FireFox</p>
+
+    <h4 class="mt-4">References</h4>
+    <a href="https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md#partly_sunny-web3---ethereum-browser-environment-check">https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md#partly_sunny-web3---ethereum-browser-environment-check</a><br>
+    <a href="https://github.com/MetaMask/faq/blob/master/detecting_metamask.md">https://github.com/MetaMask/faq/blob/master/detecting_metamask.md</a>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/vendor/jquery-3.3.1/dist/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/popper-1.14.0/dist/popper-1.14.0.js"></script>
+    <script src="assets/vendor/bootstrap-4.1.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
